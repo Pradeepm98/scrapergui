@@ -112,6 +112,6 @@ app.get('/data', async (req, res) => {
 
 const host = '0.0.0.0'
 
-app.listen(port,host () => {
+app.listen(port,host ,() => {
   console.log(`Server is running at http://localhost:${port}`);
 });
