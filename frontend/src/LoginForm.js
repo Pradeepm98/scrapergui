@@ -12,7 +12,7 @@ const LoginForm = () => {
     // Perform authentication here (e.g., make an API request)
     try {
       // Assuming you have an authentication API endpoint
-      const response = await fetch('https://localhost:3000/login', {
+      const response = await fetch('https://3.108.141.193:3000/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

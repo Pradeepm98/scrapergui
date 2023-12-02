@@ -10,7 +10,7 @@ const CsvViewer = () => {
   const fetchData = () => {
     // Fetch data based on the current query only if the initial load is complete and a query is present
     if (initialLoadComplete && query.trim() !== "") {
-      fetch(`http://3.109.206.134:3000/data?text=${query}`)
+      fetch(`http://3.108.141.193:3000/data?text=${query}`)
         .then((response) => response.json())
         .then((data) => setFilteredData(data));
     }
@@ -21,7 +21,7 @@ const CsvViewer = () => {
     const fetchDataInitially = async () => {
       // Fetch initial data only if the query is present
       if (query.trim() !== "") {
-        const response = await fetch(`http://3.109.206.134:3000/data?text=${query}`);
+        const response = await fetch(`http://3.108.141.193:3000/data?text=${query}`);
         const initialData = await response.json();
         setFilteredData(initialData);
         setInitialLoadComplete(true);

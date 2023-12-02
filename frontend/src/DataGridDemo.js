@@ -55,7 +55,7 @@ export default function DataGridDemo() {
     // Fetch data from your backend API
     const fetchData = async () => {
       try {
-        const response = await fetch('http://3.109.206.134:3000/api/rows');
+        const response = await fetch('http://3.108.141.193:3000/api/rows');
         const result = await response.json();
         setData(result);
       } catch (error) {

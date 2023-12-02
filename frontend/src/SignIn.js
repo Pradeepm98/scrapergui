@@ -38,7 +38,7 @@ export default function SignIn() {
     const password = data.get('password');
   
     try {
-      const response = await fetch('http://3.109.206.134:3000/api/authenticate', {
+      const response = await fetch('http://3.108.141.193:3000/api/authenticate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -52,9 +52,9 @@ export default function SignIn() {
   
         // Redirect based on email
         if (email.includes('admin')) {
-          window.location.href = 'http://3.109.206.134:3001/admin';
+          window.location.href = 'http://3.108.141.193/admin';
         } else {
-          window.location.href = 'http://3.109.206.134:3001/csvviewer';
+          window.location.href = 'http://3.108.141.193:3001/csvviewer';
         }
       } else {
         console.error('Authentication failed');
